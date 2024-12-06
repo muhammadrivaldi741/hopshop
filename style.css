@@ -166,7 +166,7 @@ li a{
     float: right;
 }
 
-@media screen and (max-width: 761px)  {
+@media screen and (max-width: 1200px)  {
     *{
         margin: 0;
         padding: 0;
@@ -242,7 +242,7 @@ li a{
         background-size: cover;
         transition: 400ms;
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
         grid-template-rows: auto auto auto auto auto;
         grid-template-areas: 
         "heroquote"
@@ -277,7 +277,7 @@ li a{
         
     }
     .heroimage img{
-        height: 35rem;
+        height: 20rem;
         position: absolute;
         bottom: 0;
     

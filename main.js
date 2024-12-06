@@ -1,7 +1,7 @@
 
 
  
- const searchBar = document.querySelector('.search-bar');
+//  const searchBar = document.querySelector('.search-bar');
  const cartLogo = document.getElementById('totalquantity')
  let cartQuantity = 0;
 //  let productpreview = document.querySelector('.preview');
@@ -317,13 +317,13 @@ function closePopup() {
 
  
  // Add an event listener for 'click' event
- searchBar.addEventListener('click', function() {
-     // URL to open
-     const url = "searchpage.html";
+//  searchBar.addEventListener('click', function() {
+//      // URL to open
+//      const url = "searchpage.html";
      
-     // Open the URL in a new tab
-     window.location.href = url;
- });
+//      // Open the URL in a new tab
+//      window.location.href = url;
+//  });
 
 
  

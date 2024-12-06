@@ -166,165 +166,7 @@ li a{
     float: right;
 }
 
-@media screen and (max-width: 900px)  {
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: "Integral CF Regular", sans-serif;
-        font-weight: 200;
-      font-style: normal;
-    }
-    /* @import url(https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular); */
-    .navbar{
-        display: flex;
-        align-items: center;
-        /* justify-content: space-between; */
-        width: 100vh;
-        height: 50px;
-        padding: 0px 50px;
-        position: fixed;
-        top: 0;
-        background-color: #fff;
-        z-index: 3;
-        
-    }
-    .menu{
-        display: flex;
-        /* justify-content: space-between; */
-        list-style: none;
-        display: none;
-        
-    }
-    li a{
-        padding: 0.5rem;
-        list-style: none;
-        /* display: none; */
-    }
-    .hopshop{
-        font-size: 2rem;
-        font-weight: bolder;
-        
-    }
-    .searchbar{
-        display: flex;
-        align-items: center;
-        margin-right: 0;
-        
-    }
-    .searchbar form{
-        display: flex;
-        margin: 0;
-    
-    }
-    .searchbar input{
-        padding: 10px;
-        width: 30rem;
-        /* padding-right: 10rem ; */
-        outline: none;
-        font-size: 15px;
-    }
-    .logo{
-        text-align: right;
-        position: absolute;
-        right: 10%;
-        list-style: none;
-    }
-    .logo li{
-       text-decoration: none;
-       float: right;
-    }
-    .hero{
-        height: 100vh;
-        /* background-image: var(--bg-image-desktop); */
-        background-color: gold;
-        background-position: center;
-        background-repeat: no-repeat    ;
-        background-size: cover;
-        transition: 400ms;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-areas: 
-        "heroquote"
-        "heroP"
-        "herobutton"
-        "herothingy"
-        "heroimage"
-    
-        
-        ;
-        position: relative;
-    
-        
-    
-    
-    }
-    .heroquote{
-        grid-area: heroquote;
-       
-        /* background-color: gold; */
-        /* height: ; */
-        padding-top: 2em;
-        padding-left: 1em ;
-        font-size: 1.5rem;
-    
-    }
-    .heroimage{
-        grid-area: heroimage;
-        /* background-color: blue; */
-        /* height: 100vh; */
-        
-        
-    }
-    .heroimage img{
-        height: 20rem;
-        position: absolute;
-        bottom: 0;
-    
-    }
-    .heroP{
-        grid-area: heroP;
-        font-size: 10px;
-        color: #757575;
-        /* background-color: salmon; */
-        /* padding-top: 18em; */
-        padding-left: 4em ;
-        
-    }
-    .herobutton{
-        grid-area: herobutton;
-        /* background-color: yellow; */
-        padding-left: 2.5em;
-        
-    }
-    .herobutton button{
-        color: #fff;
-        padding: 15px 50px;
-        border-radius: 30px;
-        background-color: black;
-    }
-    .herothingy{
-        grid-area: herothingy;
-        /* background-color: aquamarine; */
-        display: grid;
-        grid: 2fr / auto auto auto;
-        
-    
-        
-    }
-    .herothingy .stats{
-        /* background-color: firebrick; */
-        /* border-right-style: solid ; */
-        border-left-style: solid;
-        border-color: black;
-        font-size: 10px;
-       
-        padding: 20px; 
-        margin: 20px;
-        float: right;
-    }
-    
-}
+
 .products{
     height: 100vh;
     justify-content: center;
@@ -339,14 +181,16 @@ li a{
 
 }
 .menshirt{
-    display: grid;
-    grid: 8fr / auto auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid: 8fr / auto auto auto auto; */
     align-items: center;
 
 }
 .card{
     height: auto;
     width: 200px;
+    x
     /* border: 1px  solid; */
     padding: 20px;
     margin-left: auto;
@@ -1126,6 +970,165 @@ position: absolute;
 
 
 
+}
+@media screen and (max-width: 900px)  {
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "Integral CF Regular", sans-serif;
+        font-weight: 200;
+      font-style: normal;
+    }
+    /* @import url(https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular); */
+    .navbar{
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+        width: 100vw;
+        height: 50px;
+        padding: 0px 50px;
+        position: fixed;
+        top: 0;
+        background-color: #fff;
+        z-index: 3;
+        
+    }
+    .menu{
+        display: flex;
+        /* justify-content: space-between; */
+        list-style: none;
+        display: none;
+        
+    }
+    li a{
+        padding: 0.5rem;
+        list-style: none;
+        /* display: none; */
+    }
+    .hopshop{
+        font-size: 2rem;
+        font-weight: bolder;
+        
+    }
+    .searchbar{
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        
+    }
+    .searchbar form{
+        display: flex;
+        margin: 0;
+    
+    }
+    .searchbar input{
+        padding: 10px;
+        width: 30rem;
+        /* padding-right: 10rem ; */
+        outline: none;
+        font-size: 15px;
+    }
+    .logo{
+        text-align: right;
+        position: absolute;
+        right: 10%;
+        list-style: none;
+    }
+    .logo li{
+       text-decoration: none;
+       float: right;
+    }
+    .hero{
+        height: 100vh;
+        /* background-image: var(--bg-image-desktop); */
+        background-color: gold;
+        background-position: center;
+        background-repeat: no-repeat    ;
+        background-size: cover;
+        transition: 400ms;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+        "heroquote"
+        "heroP"
+        "herobutton"
+        "herothingy"
+        "heroimage"
+    
+        
+        ;
+        position: relative;
+    
+        
+    
+    
+    }
+    .heroquote{
+        grid-area: heroquote;
+       
+        /* background-color: gold; */
+        /* height: ; */
+        padding-top: 2em;
+        padding-left: 1em ;
+        font-size: 1.5rem;
+    
+    }
+    .heroimage{
+        grid-area: heroimage;
+        /* background-color: blue; */
+        /* height: 100vh; */
+        
+        
+    }
+    .heroimage img{
+        height: 20rem;
+        position: absolute;
+        bottom: 0;
+    
+    }
+    .heroP{
+        grid-area: heroP;
+        font-size: 10px;
+        color: #757575;
+        /* background-color: salmon; */
+        /* padding-top: 18em; */
+        padding-left: 4em ;
+        
+    }
+    .herobutton{
+        grid-area: herobutton;
+        /* background-color: yellow; */
+        padding-left: 2.5em;
+        
+    }
+    .herobutton button{
+        color: #fff;
+        padding: 15px 50px;
+        border-radius: 30px;
+        background-color: black;
+    }
+    .herothingy{
+        grid-area: herothingy;
+        /* background-color: aquamarine; */
+        display: grid;
+        grid: 2fr / auto auto auto;
+        
+    
+        
+    }
+    .herothingy .stats{
+        /* background-color: firebrick; */
+        /* border-right-style: solid ; */
+        border-left-style: solid;
+        border-color: black;
+        font-size: 10px;
+       
+        padding: 20px; 
+        margin: 20px;
+        float: right;
+    }
+    
 }
 
 

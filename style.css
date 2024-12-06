@@ -166,7 +166,7 @@ li a{
     float: right;
 }
 
-@media screen and (max-width: 1200px)  {
+@media screen and (max-width: 900px)  {
     *{
         margin: 0;
         padding: 0;
@@ -234,7 +234,7 @@ li a{
        float: right;
     }
     .hero{
-        height: 200vh;
+        height: 100vh;
         /* background-image: var(--bg-image-desktop); */
         background-color: gold;
         background-position: center;

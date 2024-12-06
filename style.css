@@ -236,7 +236,7 @@ li a{
     .hero{
         height: 200vh;
         /* background-image: var(--bg-image-desktop); */
-        background-color: #F2F0F1;
+        background-color: gold;
         background-position: center;
         background-repeat: no-repeat    ;
         background-size: cover;

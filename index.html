@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_right" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <style>
+        
+       
+       
+    
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div><a class="hopshop">HOPSHOP</a></div>
+
+        <ul class="menu">
+            
+            <li><a class="navmenu">shop</a></li>
+            <li><a class="navmenu">on sale</a></li>
+            <li><a class="navmenu">new arival</a></li>
+            <li><a class="navmenu">Brand</a></li>
+            
+            
+           
+        </ul>
+        
+        <ul class="logo">
+            <li>
+            <div class="cartlogo">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-flip-horizontal"></i></a>
+            <span class="totalquantity" id="totalquantity"></span>
+
+                
+            </div>
+        </li>
+            <li><a>logo</a></li>
+
+        </ul>
+        
+    </nav>
+    <div class="hero theme1">
+        
+            <h1 class="heroquote" >
+                FIND CLOTHES THAT MATCHES YOUR STYLE
+            </h1>
+            <p class="heroP">
+                Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
+            </p>
+            <div class="herobutton">
+                <button>Shop Now</button>
+            </div>
+            <div class="herothingy">
+                <div class="thingy">
+                    <div class="stats">
+                        <h1>
+                            30,000+
+                        </h1>
+                        <p>Happy Customer</p>
+                    </div>
+                    <div class="stats">
+                        <h1>
+                            2,000+
+                        </h1>
+                        <p>High-Quality Products</p>
+                    </div>
+                    <div class="stats">
+                        <h1>
+                            200+
+                        </h1>
+                        <p>International Brands</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="heroimage">
+                 <img src="img/bg-desktop-removebg.png" alt="">
+            </div>
+
+
+        
+
+    </div>
+
+    <div class="products">
+        <h1 class="title">MEN'S</h1>
+        <div class="menshirt" id="menshirt">
+            
+
+            
+          
+        </div>
+        <div class="all">
+        <form action="mens.html">
+            <input type="submit" value="View All">
+        </form>
+        
+
+        </div>
+
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closePopup()">Close</button>
+            <div class="modalgrid">
+                <div class="imgframe">
+                    <img id="modal-img1" src="" alt="" class="cardimg">
+                    <img id="modal-img2" src="" alt="" class="cardimg">
+                    <img id="modal-img3" src="" alt="" class="cardimg">
+    
+                </div>
+                <div class="descprod">
+                    <h3 id="modal-title"></h3>
+                    <div class="ratings">
+                        <div class="star-ratings">
+                            <div class="starborder">
+                               
+                                <div class="stars-inner"></div>
+                            </div>
+                            
+
+                        
+
+                            
+                            
+    
+    
+                        </div>
+                        
+                            <p id="modal-rate"></p>
+
+                        
+                        
+
+                    </div>
+                    
+                    <h4 id="modal-price"></h4>
+                    <p id="modal-description"></p>
+                    <!-- <button onclick="
+                    cartQuantity++;
+                    console.log(`cart quantity : ${cartQuantity} `);
+                    ">
+                        add to cart
+                    </button>
+                    <button onclick="tambah()">+</button>
+                    <p class="jumlah" id="jumlah">0</p>
+                    <a href="">-</a>
+
+             -->
+                    <button id="btn-add-cart">add to cart</button>
+
+                </div>
+                <div class="tab-menu">
+                    <button class="tabbutton active">description</button>
+                    <button class="tabbutton">ulasan</button>
+                    
+                </div>
+                <div class="line"></div>
+                <div class="tab-content active ">
+                    <h1>description</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci aut modi delectus magnam illo sit eaque pariatur porro quibusdam nisi laudantium maiores et aspernatur suscipit tempore vitae, soluta eveniet eius?</p>
+
+                </div>
+                <div class="tab-content" >
+
+                    <h1>ulasan</h1>
+                    <!-- <button id="addComment" onclick="addComment()">tambah komen</button> -->
+                    <div id="comment-modal">
+                      
+
+                    </div>
+                    
+                    
+
+                </div>
+                
+
+            </div>
+            
+            
+            
+            
+        </div>
+    </div>
+   
+    <!-- <div class="product-preview" id="product-preview">
+        <div class="preview " id="preview">
+            <div class="cardpreview " data-target="tai"  >
+                <img src="${data.images[0]}" alt="" class="cardimg">
+                <h1 class="title">${data.title}</h1>
+                <h1 class="price">$${data.price}</h1>
+                <a href="#" class="detailbtn">detail</a>
+
+            </div>
+            
+          
+        </div>
+        
+    </div> -->
+    <div class="products">
+
+        <h1 class="title">WOMEN'S</h1>
+        <div class="menshirt" id="topsell">
+            
+            
+            <!-- <div class="card">
+                
+                <img src="" alt="" class="cardimg">
+                <h1 class="title"></h1>
+                <h1 class="price"></h1>
+
+            </div> -->
+            <!-- <div class="card">
+
+            </div>
+            <div class="card"></div>
+            <div class="card"></div> -->
+        </div>
+        <div class="all">
+            <form action="searchpage.html">
+                <input type="submit" value="View All">
+            </form>
+
+        </div>
+
+    </div>
+    <div class="category">
+        <h1 class="title">BROWSE by CATEGORY</h1>
+        <div class="women">
+            <h1 class="categh1">WOMEN'S</h1>
+
+        </div>
+        <div class="men">
+            <h1 class="categh1">MEN'S</h1>
+
+
+        </div>
+        <div class="menshoes">
+            <h1 class="categh1">MEN'S SHOES</h1>
+
+
+        </div>
+        <div class="womenshoes">
+            <h1 class="categh1">WOMEN'S SHOES</h1>
+
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            
+            
+            <div class="carousel">
+                <img src="img/men.png" alt="img">
+                <img src="img/women.png" alt="img">
+                <img src="img/menshoes.jpg" alt="img">
+                <img src="img/womenshoes.jpg" alt="img">
+                <img src="img/men.png" alt="img">
+                <img src="img/women.png" alt="img">
+                <img src="img/menshoes.jpg" alt="img">
+                <img src="img/womenshoes.jpg" alt="img">
+    
+    
+            </div>
+            <i id="rigth" class="fa-solid fa-angle-right"></i>
+
+        </div>
+
+    </div>
+
+    <div class="comment swiper" >
+        <!-- <h1>OUR HAPPY CUSTOMERS</h1>
+        
+        <div class="slider-wrapper" >
+            <div class="swiper-wrapper" id="comment">
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+
+           
+            <div class="slider-button swiper-button-prev"></div>
+            <div class="slider-button swiper-button-next"></div>
+
+        </div>
+     
+       
+        <div class="swiper-pagination"></div>   
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        -->
+
+        
+          
+        
+    </div>
+    <div class="footer">
+        <div class="white " style="background-color: white; height: 5rem;"></div>
+        <div class="subs">
+            <ul>
+                <li>
+                    <div class="substext">
+                        <h1>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
+                </li>
+                <li>
+                    <form action="" >
+                        <input type="text" class="emailform" placeholder="Enter your email address">
+                    </form>
+                    <button class="subsbutton">Subscribe to Newsletter</button>
+
+                </li>
+
+            </ul>
+
+            </div>
+            <div class="footerinfo">
+                <div class="footerlogo">
+                    <ul>
+                        <li>
+                    <h2>HOPSHOP</h2>
+
+                        </li>
+                        <li>
+                            <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                        </li>
+                        <li>
+                            <ul class="footericons">
+                                <li><i class="fa-brands fa-square-x-twitter"></i></li>
+                                <li><i class="fa-brands fa-facebook"></i></li>
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                                <li><i class="fa-brands fa-youtube"></i></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="company">
+                    <ul>
+                        <li><h5>Company</h5></li>
+                        <li><p>About</p></li>
+                        <li><p>Features</p></li>
+                        <li><p>Works</p></li>
+                        <li><p>Career</p></li>
+
+                    </ul>
+                </div>
+                <div class="help">
+                    <ul>
+                        <li><h5>Help</h5></li>
+                        <li><p>Customer Support</p></li>
+                        <li><p>Delivery Details</p></li>
+                        <li><p>Terms & Conditions</p></li>
+                        <li><p>Privacy Policy</p></li>
+
+                    </ul>
+                </div>
+                <div class="faq">
+                    <ul>
+                        <li><h5>FAQ</h5></li>
+                        <li><p>Account</p></li>
+                        <li><p>Manage Deliveries</p></li>
+                        <li><p>Orders</p></li>
+                        <li><p>Payments</p></li>
+
+                    </ul>
+                </div>
+                <div class="resource">
+                    <ul>
+                        <li><h5>Company</h5></li>
+                        <li><p>Free eBooks</p></li>
+                        <li><p>Development Tutorial</p></li>
+                        <li><p>How to - Blog</p></li>
+                        <li><p>Youtube Playlist</p></li>
+
+                    </ul>
+                </div>
+    
+            </div>
+            <div class="cr">
+                <p>HOPSHOP © 2000-2024, All Rights Reserved</p>
+            </div>
+        </div>
+        
+        
+
+
+
+
+    </div>
+    <div class="fake" id="cart"></div>
+
+  
+    
+
+
+     
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js" defer>
+       
+    </script>
+</body>
+<!-- <script src="main.js" defer></script> -->
+</html>
